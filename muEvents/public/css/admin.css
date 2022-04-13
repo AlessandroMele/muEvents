@@ -1,0 +1,54 @@
+
+/*  bottoni e link generali */
+.conferma, .inserisci,.modifica_faq {
+    background: linear-gradient(145deg, #01e5be, #00528c, #01e5be) !important;
+    background-size: 1000% !important;
+background-position: left !important;
+transition: 1.2s !important;
+}
+
+
+.modifica_faq:hover,.inserisci:hover, .conferma:hover {
+cursor: pointer;
+background-position: right !important;
+}
+
+
+
+body{
+    background-image: linear-gradient(145deg, #72f7e0, #0081dc, #89ffeb) !important;
+}
+
+
+/*  link navbar   */
+header ul .link:hover,
+header ul li .current {
+    background-color: #0081dc !important;
+}
+
+/*  link concattaci */
+.footer-link {
+    color: #0081dc !important;
+    transition: 0.6s;
+}
+
+.footer-link:hover {
+    color: #89ffeb !important;
+}
+
+/*  icone   */
+.fa:hover{
+        color: #0081dc !important;
+}
+
+.home-info h1.subtitles{
+    color:#0081dc !important;
+}
+
+#pagination a:hover{
+    color:#0081dc !important;
+}
+
+.sold{
+    color:#0081dc !important;
+}
