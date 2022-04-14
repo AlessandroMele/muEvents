@@ -4,6 +4,7 @@
 - [Obiettivi didattici e specifiche di progetto](#obiettivi-didattici)
 - [Database, schema degli utenti e dei link](#database-schema-degli-utenti-e-dei-link)
 - [Preparazione dell'ambiente](#preparazione-dellambiente)
+- [Progettazione e descrizione sintetica del sito](#progettazione-e-descrizione-sintetica-del-sito)
 - [FAQs](#faqs)
 
 # Obiettivi didattici
@@ -60,11 +61,20 @@ Di conseguenza, ogni evento a catalogo mostri, sia agli utenti di livello 1 che 
 ## Database
 ![Image text](/readme_materials/1-db.jpg)
 ## Schema degli utenti
+Sono state definite le specifiche funzionali per livello di utenza e costruito un mockup da seguire rigidamente durante la fase di progettazione. <br />
+Segue l’elenco degli utenti che hanno la possibilità di accedere al sito, per ognuno di essi vengono indicati gli strumenti messi a loro disposizione:
+- Utente livello 1: area pubblica del sito, ovvero disponibile a tutti coloro che accedono al sito web senza autenticarsi, essi hanno la possibilità di esplorare il catalogo (con possibilità di filtraggio), visualizzare le FAQ e, ovviamente, registrarsi come utenti di livello 2.
+- Utente livello 2: area dedicata ai clienti che possono acquistare biglietti, usufruire di eventuali sconti, indicare la propria intenzione di partecipare ad un certo evento, modificare i propri dati personali e visualizzare lo storico degli acquisti nella loro area personale.
+- Utente livello 3: area dedicata agli organizzatori di eventi; essi possono fare domanda come organizzatori inviando un’apposita mail all’indirizzo presente nel footer.
+Ogni organizzatore può creare/modificare/cancellare i propri eventi gestiti e attivare la funzione di analisi delle vendite (quantità/percentuale biglietti venduti e incasso per ogni evento).
+- Utente livello 4: area dedicata all’ amministratore del sito, colui che può eliminare gli utenti di livello 2 (utenti), creare/modificare/cancellare utenti di livello 3 (organizzazioni), visualizzare i dati di vendita di ciascuna organizzazione e creare/modificare/cancellare le FAQ del sito.
 ![Image text](/readme_materials/2-Utente1.jpg)
 ![Image text](/readme_materials/2-Utente2.jpg)
 ![Image text](/readme_materials/2-Utente3.jpg)
 ![Image text](/readme_materials/2-Utente4.jpg)
+
 ## Schema dei link
+Lo schema di link definisce tutte le rotte del sito web, ovvero lo schema di navigazione che è possibile seguire quando ci troviamo in una pagina specifica.
 ![Image text](/readme_materials/3-schemaLink.jpg)
 
 # Preparazione dell'ambiente
@@ -85,10 +95,61 @@ http://localhost:8080/muEvents_TWEBPROG/muEvents/public/index.php
 ```
 
 dove 8080 è la porta del Web Server di XAMPP.
-Per accedere come utente di livello 2,3,4 inserire le seguenti credenziali:
-2 -> user: clieclie password: Jnso7ITN ;
-3 -> user: orgaorga password: Jnso7ITN ;
-4 -> user: adminadmin password: Jnso7ITN ;
+Per accedere come utente, inserire le seguenti credenziali:
+- Livello 2 -> user: clieclie, password: Jnso7ITN ;
+- Livello 3 -> user: orgaorga, password: Jnso7ITN ;
+- Livello 4 -> user: adminadmin, password: Jnso7ITN ;
+
+
+## Progettazione e descrizione sintetica del sito
+Dal punto di vista grafico, abbiamo deciso di creare interamente da zero il layout del sito in linea con gli stili del momento, con gradazioni di colore dipendenti dal livello di utenza con cui si interagisce.
+Seguono diverse schermate per evidenziare questi aspetti.
+ ![Image text](/readme_materials/Catalogo-utente-livello-12.jpg)
+ ![Image text](/readme_materials/Catalogo-utente-livello-34.jpg)
+ 
+### DESCRIZIONE SINTETICA DEL SITO E DELLE FUNZIONALITÀ
+
+#### UTENTE DI LIVELLO 1
+
+![Image text](/readme_materials/utente-livello-1.jpg)
+La homepage del sito si presenta in modo semplice: uno slideshow contenente gli eventi che si tengono a partire dalla data corrente con un intervallo massimo di 20 giorni.
+Sono inoltre presenti le diverse sezioni: “chi siamo”, il link alla relazione di progetto e le modalità di fornitura dei servizi.<br />
+Il catalogo mostra, oltre a tutti gli eventi, la possibilità di effettuare ricerche filtrate in base agli organizzatori e le regioni per i quali sono già presenti eventi, in più la possibilità di poter ricercare in base alla descrizione dell’evento e all’anno/mese desiderati; osserviamo che l’unico formato ammesso per la data risulta essere “AAAA-MM”, ogni eventuale variazione comporterà un messaggio di errore del valore inserito.<br />
+È previsto un pulsante di azzeramento per la cancellazione dei valori inseriti.<br />
+Spostandoci nella pagina di uno specifico evento, è possibile, oltre alla visualizzazione di tutte le informazioni richieste, anche la possibilità di poter mostrare la propria partecipazione o acquistare la quantità desiderata di biglietti: in questo caso si viene reindirizzati alla pagina di login/registrazione poiché le seguenti funzionalità sono accessibili solo agli utenti di livello 2.<br />
+Nella sezione FAQ è possibile visualizzare l’elenco di tutte le domande più frequenti, con eventuale possibilità di estendere la finestra mediante apposita freccia per visualizzare la risposta.<br />
+Nella sezione relativa al footer, vengono mostrati le informazioni generali per rimanere in contatto e la richiesta per poter aderire al sito come organizzatore di eventi.
+
+#### UTENTE DI LIVELLO 2
+
+![Image text](/readme_materials/utente-livello-2.jpg)
+Oltre alle funzionalità precedenti, è possibile accedere alla propria area riservata per:
+• Visualizzare o modificare le proprie informazioni;
+• Visualizzare gli acquisti da esso effettuati.
+Le funzionalità sono accessibili mediante apposita sezione nella barra di navigazione, identificata dall’icona dell’utente.
+
+#### UTENTE DI LIVELLO 3
+
+![Image text](/readme_materials/utente-livello-3.jpg)
+L’utente di livello 3, ovvero le organizzazioni degli eventi, possono accedere agli stessi contenuti messi a disposizione per gli utenti di livello 1, con la differenza che, una volta premuti i pulsanti di acquisto/parteciperò, apparirà un messaggio avvisandoli di eseguire la disconnessione ed effettuare l’autenticazione come utenti di livello 2.<br />
+Gli organizzatori possono inserire/modificare e cancellare i propri eventi, è previsto inoltre uno strumento di analisi (in una sezione diversa nella barra di navigazione) che permettere di visualizzare, per ogni evento appartenente all’organizzazione stessa, il numero di biglietti venduti sul totale e l’incasso totale relativo all’evento in questione.
+
+#### UTENTE DI LIVELLO 4
+![Image text](/readme_materials/utente-livello-4.jpg)
+L’utente di livello 4 è l’amministratore del sito, esso continua a poter usufruire degli stessi contenuti dell’utente di livello 1 con le stesse modalità previste per l’organizzatore.<br />
+Le sue funzionalità specifiche si riferiscono, in particolare a:
+- Cancellazione degli utenti di livello 2;
+- Inserimento/modifica/cancellazione degli utenti di livello 3;
+- Visualizzazione degli utenti di livello 3;
+- Inserimento/modifica/cancellazione delle FAQ.
+
+### STRUMENTI UTILIZZATI
+L’implementazione del sito è stata realizzata mediante i seguenti strumenti:
+- HTML: linguaggio di markup, che descrive la struttura ed il contenuto testuale/multimediale di una pagina web.
+- CSS: linguaggio utilizzato per definire la formattazione di documenti HTML.
+- JQuery: libreria basata su linguaggio JavaScript per la creazione di contenuti.
+- Laravel: framework open source che adotta il pattern MVC, realizzato in linguaggio PHP.
+
 
 # FAQS
 Per qualsiasi informazione in merito a chiarimenti, supporto all'installazione e segnalazione di bug, non esitate a contattarmi al mio indirizzo e-mail personale.
