@@ -104,8 +104,8 @@ Per accedere come utente, inserire le seguenti credenziali:
 ## Progettazione e descrizione sintetica del sito
 Dal punto di vista grafico, abbiamo deciso di creare interamente da zero il layout del sito in linea con gli stili del momento, con gradazioni di colore dipendenti dal livello di utenza con cui si interagisce.
 Seguono diverse schermate per evidenziare questi aspetti.
-![Image text](/readme_materials/Catalogo-utente-livello-12.png)
-![Image text](/readme_materials/Catalogo-utente-livello-34.png)
+![Image text](/readme_materials/catalogo-utente-livello-12.png)
+![Image text](/readme_materials/catalogo-utente-livello-34.png)
  
 ### DESCRIZIONE SINTETICA DEL SITO E DELLE FUNZIONALITÀ
 
