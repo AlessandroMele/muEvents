@@ -104,14 +104,14 @@ Per accedere come utente, inserire le seguenti credenziali:
 ## Progettazione e descrizione sintetica del sito
 Dal punto di vista grafico, abbiamo deciso di creare interamente da zero il layout del sito in linea con gli stili del momento, con gradazioni di colore dipendenti dal livello di utenza con cui si interagisce.
 Seguono diverse schermate per evidenziare questi aspetti.
- ![Image text](/readme_materials/Catalogo-utente-livello-12.jpg)
- ![Image text](/readme_materials/Catalogo-utente-livello-34.jpg)
+![Image text](/readme_materials/Catalogo-utente-livello-12.png)
+![Image text](/readme_materials/Catalogo-utente-livello-34.png)
  
 ### DESCRIZIONE SINTETICA DEL SITO E DELLE FUNZIONALITÀ
 
 #### UTENTE DI LIVELLO 1
 
-![Image text](/readme_materials/utente-livello-1.jpg)
+![Image text](/readme_materials/utente-livello-1.png)
 La homepage del sito si presenta in modo semplice: uno slideshow contenente gli eventi che si tengono a partire dalla data corrente con un intervallo massimo di 20 giorni.
 Sono inoltre presenti le diverse sezioni: “chi siamo”, il link alla relazione di progetto e le modalità di fornitura dei servizi.<br />
 Il catalogo mostra, oltre a tutti gli eventi, la possibilità di effettuare ricerche filtrate in base agli organizzatori e le regioni per i quali sono già presenti eventi, in più la possibilità di poter ricercare in base alla descrizione dell’evento e all’anno/mese desiderati; osserviamo che l’unico formato ammesso per la data risulta essere “AAAA-MM”, ogni eventuale variazione comporterà un messaggio di errore del valore inserito.<br />
@@ -122,7 +122,7 @@ Nella sezione relativa al footer, vengono mostrati le informazioni generali per 
 
 #### UTENTE DI LIVELLO 2
 
-![Image text](/readme_materials/utente-livello-2.jpg)
+![Image text](/readme_materials/utente-livello-2.png)
 Oltre alle funzionalità precedenti, è possibile accedere alla propria area riservata per:
 • Visualizzare o modificare le proprie informazioni;
 • Visualizzare gli acquisti da esso effettuati.
@@ -130,12 +130,12 @@ Le funzionalità sono accessibili mediante apposita sezione nella barra di navig
 
 #### UTENTE DI LIVELLO 3
 
-![Image text](/readme_materials/utente-livello-3.jpg)
+![Image text](/readme_materials/utente-livello-3.png)
 L’utente di livello 3, ovvero le organizzazioni degli eventi, possono accedere agli stessi contenuti messi a disposizione per gli utenti di livello 1, con la differenza che, una volta premuti i pulsanti di acquisto/parteciperò, apparirà un messaggio avvisandoli di eseguire la disconnessione ed effettuare l’autenticazione come utenti di livello 2.<br />
 Gli organizzatori possono inserire/modificare e cancellare i propri eventi, è previsto inoltre uno strumento di analisi (in una sezione diversa nella barra di navigazione) che permettere di visualizzare, per ogni evento appartenente all’organizzazione stessa, il numero di biglietti venduti sul totale e l’incasso totale relativo all’evento in questione.
 
 #### UTENTE DI LIVELLO 4
-![Image text](/readme_materials/utente-livello-4.jpg)
+![Image text](/readme_materials/utente-livello-4.png)
 L’utente di livello 4 è l’amministratore del sito, esso continua a poter usufruire degli stessi contenuti dell’utente di livello 1 con le stesse modalità previste per l’organizzatore.<br />
 Le sue funzionalità specifiche si riferiscono, in particolare a:
 - Cancellazione degli utenti di livello 2;
@@ -150,6 +150,13 @@ L’implementazione del sito è stata realizzata mediante i seguenti strumenti:
 - JQuery: libreria basata su linguaggio JavaScript per la creazione di contenuti.
 - Laravel: framework open source che adotta il pattern MVC, realizzato in linguaggio PHP.
 
+
+### FUNZIONI PARTICOLARI
+- Nel momento in cui si modificano i valori dei parametri nell’URL, da utente di livello 3, potrei modificare l’id dell’evento andando così a modificare eventi/visualizzare statistiche di altri organizzatori, questo problema è stato ovviato controllando che l’evento appartenesse effettivamente a quell’organizzazione.
+- Nel momento in cui si modificano i valori dei parametri nell’URL, da utente di livello 4, potrei modificare le informazioni dell’utente di livello 2, ma la funzionalità è applicabile ai soli organizzatori.
+- Gestione errori dovuti all’utilizzo del tasto “indietro” del browser: in particolare, nel “parteciperò” e “acquisto” di biglietti in numero superiore a quelli disponibili.
+Tutte le precedenti casistiche sono state gestite inserendo controlli aggiuntivi all’interno del Model, che, qualora non venissero soddisfatti, reindirizzano dal controller ad una pagina di errore, contenente un link per riprendere la navigazione dalla pagina a partire dalla quale si è verificato l’errore.
+- Validazione lato client: nelle form di registrazione/modifica dell’utente di livello 2 e inserimento/modifica utente di livello 3, è stato inserito uno script per la validazione lato client di tutti i dati degli stessi (inserimento e modifica eventi sono stati gestiti tramite AJAX).
 
 # FAQS
 Per qualsiasi informazione in merito a chiarimenti, supporto all'installazione e segnalazione di bug, non esitate a contattarmi al mio indirizzo e-mail personale.
