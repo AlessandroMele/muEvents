@@ -151,7 +151,7 @@ L’implementazione del sito è stata realizzata mediante i seguenti strumenti:
 - Laravel: framework open source che adotta il pattern MVC, realizzato in linguaggio PHP.
 
 
-### FUNZIONI PARTICOLARI
+#### FUNZIONI PARTICOLARI
 - Nel momento in cui si modificano i valori dei parametri nell’URL, da utente di livello 3, potrei modificare l’id dell’evento andando così a modificare eventi/visualizzare statistiche di altri organizzatori, questo problema è stato ovviato controllando che l’evento appartenesse effettivamente a quell’organizzazione.
 - Nel momento in cui si modificano i valori dei parametri nell’URL, da utente di livello 4, potrei modificare le informazioni dell’utente di livello 2, ma la funzionalità è applicabile ai soli organizzatori.
 - Gestione errori dovuti all’utilizzo del tasto “indietro” del browser: in particolare, nel “parteciperò” e “acquisto” di biglietti in numero superiore a quelli disponibili.
