@@ -76,16 +76,14 @@ di partecipare ad un certo evento, indipendentemente dall’acquisto del bigliet
 3. XAMPP (Windows) o in alternativa MAMP (MacOs)
 
 ## Installazione
-Per il corretto settaggio dell'applicazione, è necessario dapprima avviare il software del punto 3., abilitare sia il Web Server che MySQL, successivamente si rimanda alla seguente guida: https://devmarketer.io/learn/setup-laravel-project-cloned-github-com/
+Per il corretto settaggio dell'applicazione, è necessario dapprima avviare il software del punto 3., abilitare sia il Web Server che MySQL, successivamente si rimanda alla seguente guida: https://devmarketer.io/learn/setup-laravel-project-cloned-github-com/.
 Una volta completati i passaggi precedenti, collocare la cartella di progetto all'interno della cartella htdocs presente nella directory del software del punto 3.
 Siamo dunque pronti ad avviare la nostra applicazione aprendo un qualsiasi browser (si consigliano Chrome o Firefox) e digitare nella barra degli indirizzi il percorso per accedere al file index.php collocato nella cartella public della directory di progetto.
-Nel mio caso:
-
-*** bash
-http://localhost:8080/muEvents_TWEBPROG/muEvents/public/index.php
-***
-
-dove 8080 è la porta del Web Server del software al punto 3.
+Nel mio caso è http://localhost:8080/muEvents_TWEBPROG/muEvents/public/index.php, dove 8080 è la porta del Web Server del software al punto 3.
+Per accedere come utente di livello 2,3,4 inserire le seguenti credenziali:
+2 -> user: clieclie password: Jnso7ITN
+3 -> user: orgaorga password: Jnso7ITN
+4 -> user: adminadmin password: Jnso7ITN
 
 # FAQS
 Per qualsiasi informazione in merito a chiarimenti, supporto all'installazione e segnalazione di bug, non esitate a contattarmi al mio indirizzo e-mail personale.
