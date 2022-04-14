@@ -80,9 +80,11 @@ Per il corretto settaggio dell'applicazione, è necessario dapprima avviare il s
 Una volta completati i passaggi precedenti, collocare la cartella di progetto all'interno della cartella htdocs presente nella directory del software del punto 3.
 Siamo dunque pronti ad avviare la nostra applicazione aprendo un qualsiasi browser (si consigliano Chrome o Firefox) e digitare nella barra degli indirizzi il percorso per accedere al file index.php collocato nella cartella public della directory di progetto.
 Nel mio caso:
-'''
-Esempio: http://localhost:8080/muEvents_TWEBPROG/muEvents/public/index.php
-'''
+
+*** bash
+http://localhost:8080/muEvents_TWEBPROG/muEvents/public/index.php
+***
+
 dove 8080 è la porta del Web Server del software al punto 3.
 
 # FAQS
