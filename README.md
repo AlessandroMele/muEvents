@@ -1,8 +1,8 @@
 # Progetto di Tecnologie Web, UNIVPM A.A. 2020-2021
-# Table of Contents
+# Indice
 1. Obiettivi didattici e specifiche di progetto
 2. Database, schema degli utenti e dei link
-3. Installation
+3. Preparazione dell'ambiente
 4. FAQs
 
 # Obiettivi didattici
@@ -68,15 +68,22 @@ di partecipare ad un certo evento, indipendentemente dall’acquisto del bigliet
 ## Schema dei link
 ![Image text](/readme_materials/3-schemaLink.jpg)
 
-# Installazione
+# Preparazione dell'ambiente
 
 ## Prerequisiti
-1. Versione di PHP pari alla 7.4.x
-2. Composer (gestore dei pacchetti PHP)
-3. NodeJS
-4. Versione di XAMPP compatibile con la versione di PHP
+1. PHP (versione 7.4.x) e Composer
+2. Node.JS
+3. XAMPP (Windows) o in alternativa MAMP (MacOs)
 
 ## Installazione
-Per il corretto settaggio dell'applicazione, seguire la guida_ https://devmarketer.io/learn/setup-laravel-project-cloned-github-com/
+Per il corretto settaggio dell'applicazione, è necessario dapprima avviare il software del punto 3., abilitare sia il Web Server che MySQL, successivamente si rimanda alla seguente guida: https://devmarketer.io/learn/setup-laravel-project-cloned-github-com/
+Una volta completati i passaggi precedenti, collocare la cartella di progetto all'interno della cartella htdocs presente nella directory del software del punto 3.
+Siamo dunque pronti ad avviare la nostra applicazione aprendo un qualsiasi browser (si consigliano Chrome o Firefox) e digitare nella barra degli indirizzi il percorso per accedere al file index.php collocato nella cartella public della directory di progetto.
+Nel mio caso:
+'''
+Esempio: http://localhost:8080/muEvents_TWEBPROG/muEvents/public/index.php
+'''
+dove 8080 è la porta del Web Server del software al punto 3.
+
 # FAQS
 Per qualsiasi informazione in merito a chiarimenti, supporto all'installazione e segnalazione di bug, non esitate a contattarmi al mio indirizzo e-mail personale.
