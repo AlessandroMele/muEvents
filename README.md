@@ -90,7 +90,7 @@ Aprire ora il browser (si consiglia Chrome o Firefox) e digitare nella barra deg
 Ad esempio:
 
 ```bash
-http://localhost:8080/muEvents_TWEBPROG/muEvents/public/index.php
+http://localhost:8080/muEvents/muEvents/public/index.php
 ```
 
 dove 8080 è la porta del Web Server di XAMPP.
