@@ -1,4 +1,4 @@
-# Progetto di Tecnologie Web, UNIVPM A.A. 2020-2021
+# muEvents - Progetto di Tecnologie Web
 
 # Indice
 - [Obiettivi didattici e specifiche di progetto](#obiettivi-didattici)
@@ -7,12 +7,10 @@
 - [Progettazione e descrizione sintetica del sito](#progettazione-e-descrizione-sintetica-del-sito)
 - [FAQs](#faqs)
 
-# Obiettivi didattici
+# Obiettivi didattici e specifiche di Progetto
 Il progetto ha come obiettivo la realizzazione di un sito web per la promozione e la commercializzazione di eventi organizzati in Italia.<br />
 Gli eventi sono pubblicati nel sito a cura delle organizzazioni che li gestiscono, che quindi costituiscono una delle classi di utenza che ha accesso al sito stesso.<br />
-È libera e lasciata agli sviluppatori del sito la scelta della tipologia di eventi pubblicati: a livello esemplificativo e senza pretesa di esaustività si citano: eventi musicali, eventi teatrali, manifestazioni letterarie, mostre, convegni.
-
-## Specifiche di Progetto
+È libera e lasciata agli sviluppatori del sito la scelta della tipologia di eventi pubblicati: a livello esemplificativo e senza pretesa di esaustività si citano: eventi musicali, eventi teatrali, manifestazioni letterarie, mostre, convegni. <br \>
 Gli utenti dell'applicazione avranno la possibilità di accedere alle informazioni generali sul sito e potranno anche accedere al catalogo che contiene la descrizione di ciascun evento.<br />
 Una volta registrati, potranno acquistare i biglietti per gli eventi di interesse.
 In sintesi, il progetto dovrà realizzare un’applicazione Web che consenta:
@@ -60,6 +58,7 @@ Di conseguenza, ogni evento a catalogo mostri, sia agli utenti di livello 1 che 
 
 ## Database
 ![Image text](/readme_materials/1-db.jpg)
+
 ## Schema degli utenti
 Sono state definite le specifiche funzionali per livello di utenza e costruito un mockup da seguire rigidamente durante la fase di progettazione. <br />
 Segue l’elenco degli utenti che hanno la possibilità di accedere al sito, per ognuno di essi vengono indicati gli strumenti messi a loro disposizione:
@@ -149,7 +148,6 @@ L’implementazione del sito è stata realizzata mediante i seguenti strumenti:
 - CSS: linguaggio utilizzato per definire la formattazione di documenti HTML.
 - JQuery: libreria basata su linguaggio JavaScript per la creazione di contenuti.
 - Laravel: framework open source che adotta il pattern MVC, realizzato in linguaggio PHP.
-
 
 #### FUNZIONI PARTICOLARI
 - Nel momento in cui si modificano i valori dei parametri nell’URL, da utente di livello 3, potrei modificare l’id dell’evento andando così a modificare eventi/visualizzare statistiche di altri organizzatori, questo problema è stato ovviato controllando che l’evento appartenesse effettivamente a quell’organizzazione.
