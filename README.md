@@ -1,16 +1,16 @@
-# muEvents - Progetto di Tecnologie Web
 
+![Image text](/readme_materials/B0017715-66C2-4655-8D89-81E8722AD8A4.png)
 # Indice
-- [Obiettivi didattici e specifiche di progetto](#obiettivi-didattici)
+- [Obiettivi didattici e specifiche di progetto](#specifiche-di-progetto)
 - [Database, schema degli utenti e dei link](#database-schema-degli-utenti-e-dei-link)
 - [Preparazione dell'ambiente](#preparazione-dellambiente)
 - [Progettazione e descrizione sintetica del sito](#progettazione-e-descrizione-sintetica-del-sito)
 - [FAQs](#faqs)
 
-# Obiettivi didattici e specifiche di Progetto
+# Specifiche di Progetto
 Il progetto ha come obiettivo la realizzazione di un sito web per la promozione e la commercializzazione di eventi organizzati in Italia.<br />
 Gli eventi sono pubblicati nel sito a cura delle organizzazioni che li gestiscono, che quindi costituiscono una delle classi di utenza che ha accesso al sito stesso.<br />
-È libera e lasciata agli sviluppatori del sito la scelta della tipologia di eventi pubblicati: a livello esemplificativo e senza pretesa di esaustività si citano: eventi musicali, eventi teatrali, manifestazioni letterarie, mostre, convegni. <br \>
+È libera e lasciata agli sviluppatori del sito la scelta della tipologia di eventi pubblicati: a livello esemplificativo e senza pretesa di esaustività si citano: eventi musicali, eventi teatrali, manifestazioni letterarie, mostre, convegni. <br />
 Gli utenti dell'applicazione avranno la possibilità di accedere alle informazioni generali sul sito e potranno anche accedere al catalogo che contiene la descrizione di ciascun evento.<br />
 Una volta registrati, potranno acquistare i biglietti per gli eventi di interesse.
 In sintesi, il progetto dovrà realizzare un’applicazione Web che consenta:
@@ -29,8 +29,7 @@ Ad un maggior livello di dettaglio, nella realizzazione del sito si tenga conto 
 
 Relativamente all’accesso all’applicazione, si definisca una policy diversificata articolata nei seguenti livelli:
 - Livello 1: area pubblica del sito, cioè disponibile con le informazioni o servizi forniti a tutti coloro che accedono al sito (anche agli utenti definiti nei livelli successivi). A questo livello si associno le funzionalità di:
-  - accesso al catalogo degli eventi (senza possibilità di acquisto di biglietti) e alla funzione di
-ricerca;
+  - accesso al catalogo degli eventi (senza possibilità di acquisto di biglietti) e alla funzione di ricerca;
   - registrazione di un nuovo cliente (utente di Livello2), a cura dello stesso.
 - Livello 2: area per i clienti i quali possono:
   - modificare tutti i propri dati personali;
